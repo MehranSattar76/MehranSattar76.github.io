@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <nav>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <title>Home</title>
+
+    </head>
+    <body>
+      <div class="boxed">
+		    <h1 class="center">
+		      Homepage
+		    </h1>
+		  </div>
+		<div class="boxed">
+      <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a href="https://cs50.harvard.edu/x/2020/" class="navbar-brand">CS50x</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav" target="blank">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="motivation.html" class="nav-item nav-link">Motivation</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
+                    <div class="dropdown-menu">
+                        <a href="project1.html" class="dropdown-item" target="blank">Project 1</a>
+                        <a href="project2.html" class="dropdown-item" target="blank">Project 2</a>
+                        <a href="project3.html" class="dropdown-item" target="blank">Project 3</a>
+                    </div>
+                </div>
+            </div>
+            <form action="https://www.google.com/search" method="get" target="blank" class="form-inline">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Google Search">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
+                <div class="dropdown-menu">
+                  <a href="https://www.facebook.com/rao.mehransattar/" class="dropdown-item" target="blank">Facebook</a>
+                  <a href="https://www.instagram.com/rao_mehran/" class="dropdown-item" target="blank">Instagram</a>
+                  <a href="mailto:mehransattar321@gmail.com" class="dropdown-item" target="blank">Gmail</a>
+                </div>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="boxed">
+        <div class="bs-example">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="cs50.jpg" alt="First Slide" style="width:80%;">
+              </div>
+              <div class="carousel-item">
+                <img src="david.jpeg" alt="Second Slide" style="width:80%;">
+              </div>
+              <div class="carousel-item">
+                <img src="david 2.jpg" alt="Third Slide" style="width:80%;">
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="boxed">
+        <h2 style="text-align:left; margin-left: 30px;"> Bio </h2>
+
+        <ul class="nav justify-content-center" style="margin-left: 30px;">
+          <li class="nav-item" style="font-size: 20px;">
+            <p> I'm Rao Mehran. I belong to Pakistan. I'm an Aerspace Engineer by profession. For programming, I'm super beginner but thanks to David Malan, Brian , Loyd and other
+             team members who are working hard for our learning.</p>
+             <p>Before CS50x, programming was like <img src="mountain.jpg" alt="mountain" class="icon"> but after it, it's like <img src="duck.jpg" alt="duck" class="icon"> </p>
+             <p>More intrestingly, I created this website by learning CS50x: Introduction to Computer Science. If you wanna share ideas on programming, let's have a chat(use contact given on
+             top right of the page). At the end I would say, do take the opportunity provided below. Have a good day!</p>
+
+            </p>
+          </li>
+        </ul>
+    </div>
+    <div class="boxed">
+        <h2 style="text-align:left; margin-left: 30px;"> Opportunity </h2>
+        <p class="center" style="font-size: 20px;"> Do you wanna learn CS50 ??? </p>
+        <form class="nav justify-content-center" target="blank " style=" margin-left: 30px; margin-bottom: 30px; font-size: 20px;">
+            <input type="submit" id = "name" name= "yes" value ="Yes" formaction="https://www.edx.org/course/cs50s-introduction-to-computer-science">
+            <input type="submit" id = "motivation" name= "motivation" value ="No, I need more motivation" formaction="motivation.html" style=" margin-left: 30px;">
+        </form>
+        <p class="center"> </p>
+    </div>
+
+    </body>
+</html>
+
+
+

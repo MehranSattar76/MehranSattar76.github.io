@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<nav>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="styles.css" rel="stylesheet">
+  </nav>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<title>
+		Project 1
+	</title>
+
+	<script src="project1.js">	</script>
+
+</head>
+
+<body>
+<div class="boxed">
+	<h1 class ="center">
+		Readability
+	</h1>
+</div>
+<div class="boxed">
+	 <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a href="https://cs50.harvard.edu/x/2020/" class="navbar-brand">CS50x</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav" target="blank">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="motivation.html" class="nav-item nav-link">Motivation</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
+                    <div class="dropdown-menu">
+                        <a href="project1.html" class="dropdown-item" target="blank">Project 1</a>
+                        <a href="project2.html" class="dropdown-item" target="blank">Project 2</a>
+                        <a href="project3.html" class="dropdown-item" target="blank">Project 3</a>
+                    </div>
+                </div>
+            </div>
+
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
+                <div class="dropdown-menu">
+                  <a href="https://www.facebook.com/rao.mehransattar/" class="dropdown-item" target="blank">Facebook</a>
+                  <a href="https://www.instagram.com/rao_mehran/" class="dropdown-item" target="blank">Instagram</a>
+                  <a href="mailto:mehransattar321@gmail.com" class="dropdown-item" target="blank">Gmail</a>
+                </div>
+              </div>
+          </div>
+        </nav>
+      </div>
+</div>
+<div class="boxed">
+	<h2 class="center">
+		Enter the Text to check its Coleman-Liau index
+	</h2>
+	<form onsubmit="readability(); return false;" class="bs-example">
+		<label for="textarea"><h3>Enter Your Text</h3></label>
+    	<textarea class="form-control" id="inputText" rows="4" maxlength="1000" placeholder="Enter your text upto 1000 characters" ></textarea>
+  		<input type="submit" id = "submitText" name= "submitText" value ="Submit">
+    </form>
+</div>
+<div class="boxed">
+    <h3 id="resultLabel" class="center">
+    		Index needs to be calculated
+    </h3>
+
+    <h4 id="result" class="nav justify-content-center" >
+
+    </h4>
+</div>
+</body>
+</html>
